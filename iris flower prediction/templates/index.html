@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Iris ML Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    body{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background: linear-gradient(135deg,#dbeafe,#f0f9ff);
+    }
+
+    .card{
+        background:white;
+        padding:40px 50px;
+        border-radius:20px;
+        box-shadow:0 15px 40px rgba(0,0,0,0.15);
+        text-align:center;
+        width:550px;
+        transition:.3s;
+    }
+
+    .card:hover{
+        transform:translateY(-5px);
+    }
+
+    h1{
+        margin-bottom:30px;
+        color:#1e3a8a;
+        letter-spacing:1px;
+    }
+
+    .form-grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:20px 25px;
+        margin-bottom:30px;
+    }
+
+    .field{
+        display:flex;
+        flex-direction:column;
+        text-align:left;
+    }
+
+    label{
+        font-size:14px;
+        margin-bottom:6px;
+        color:#374151;
+        font-weight:600;
+    }
+
+    input{
+        padding:10px 12px;
+        border-radius:10px;
+        border:1px solid #cbd5e1;
+        outline:none;
+        transition:.25s;
+        font-size:15px;
+    }
+
+    input:focus{
+        border-color:#2563eb;
+        box-shadow:0 0 0 3px rgba(37,99,235,.15);
+    }
+
+    button{
+        padding:12px 40px;
+        font-size:16px;
+        border:none;
+        border-radius:12px;
+        background:linear-gradient(135deg,#22c55e,#16a34a);
+        color:white;
+        font-weight:600;
+        cursor:pointer;
+        transition:.3s;
+    }
+
+    button:hover{
+        transform:scale(1.05);
+        box-shadow:0 10px 25px rgba(34,197,94,.4);
+    }
+
+    .footer{
+        margin-top:20px;
+        font-size:12px;
+        color:#64748b;
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h1>IRIS FLOWER PREDICTION</h1>
+
+
+
+
+
+
+
+    <form action="/predict" method="post">
+
+<div class="form-grid">
+
+<div class="field">
+<label>Sepal Length</label>
+<input name="a" type="number" step="any" required>
+</div>
+
+<div class="field">
+<label>Petal Width</label>
+<input name="d" type="number" step="any" required>
+</div>
+
+<div class="field">
+<label>Sepal Width</label>
+<input name="b" type="number" step="any" required>
+</div>
+
+<div class="field">
+<label>Petal Length</label>
+<input name="c" type="number" step="any" required>
+</div>
+
+</div>
+
+<button type="submit">Predict</button>
+
+</form>
+
+
+    <div class="footer">
+        ML Flower Classification Interface
+    </div>
+</div>
+
+</body>
+</html>

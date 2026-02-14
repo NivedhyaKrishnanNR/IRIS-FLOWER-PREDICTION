@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Prediction Result</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:"Segoe UI",sans-serif;
+background:linear-gradient(135deg,#c7d2fe,#ecfeff);
+}
+
+.container{
+background:white;
+padding:50px 60px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 20px 50px rgba(0,0,0,0.15);
+animation:fadeIn .7s ease;
+}
+
+h1{
+color:#1e40af;
+margin-bottom:20px;
+}
+
+.result-box{
+font-size:24px;
+font-weight:600;
+color:#16a34a;
+background:#f0fdf4;
+padding:20px;
+border-radius:15px;
+margin:20px 0;
+}
+
+button{
+margin-top:20px;
+padding:12px 35px;
+font-size:16px;
+border:none;
+border-radius:12px;
+background:linear-gradient(135deg,#3b82f6,#2563eb);
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>Prediction Result</h1>
+
+<div class="result-box">
+🌸 Predicted Flower: <br><br>
+<b>Iris Setosa</b>
+</div>
+
+<a href="/">
+<button>Try Again</button>
+</a>
+
+</div>
+
+</body>
+</html>
